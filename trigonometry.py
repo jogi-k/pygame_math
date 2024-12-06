@@ -1,3 +1,4 @@
+import pygame
 import math
 WIDTH = 1000
 HEIGHT = 1000
@@ -9,6 +10,7 @@ radius = 4 * HEIGHT / 10
 
 winkel = 30
 
+pygame.key.set_repeat(500, 50)
 
 def draw():
     screen.clear()
