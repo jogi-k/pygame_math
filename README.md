@@ -6,7 +6,7 @@ Just a repo to keep some (ugly) python scripts to show my kids some math functio
 
 You need to have pygame and pgzero installed: 
 
-```pip install pygame```
+```pip install pygame```   
 ```pip install pgzero```
 
 Starting then with:
