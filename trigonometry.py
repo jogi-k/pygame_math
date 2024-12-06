@@ -24,8 +24,18 @@ def draw():
     screen.draw.line(( mitte_x + cosi_r , mitte_y ),( mitte_x + cosi_r, mitte_y - sinu_r ), 'green')
 
     mytext = "Winkel = " + str( winkel) + "\nSinus = " + str(sinus) + "\nCosinus = " + str(cosinus)      
-
     screen.draw.text( mytext, ( 10, 10) )
+
+    if cosinus > 0 :
+        screen.draw.text("cos", topright = ( mitte_x + cosi_r - 3 , mitte_y + 3 ))
+    else :
+        screen.draw.text("cos", topleft = ( mitte_x + cosi_r + 3 , mitte_y + 3 ))
+
+    if sinus > 0 :
+        screen.draw.text("sin", topright = ( mitte_x + cosi_r + 3 , mitte_y - sinu_r + 3), angle = 90 )
+    else:
+        screen.draw.text("sin", topleft = ( mitte_x + cosi_r + 3 , mitte_y - sinu_r - 3), angle = 90 )
+
 
 
 def on_key_down( key ):
